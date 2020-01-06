@@ -8,4 +8,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'My App';
   name = 'Aniket';
+  togglestatus: Boolean =false;
+  clickLogs =[];
+  counter = 0;
+  onClickToggle(event:Event){
+    this.togglestatus = !this.togglestatus;  
+    //console.log(event);
+    this.clickLogs.push(new Date());
+  }
 }
+
+
+
